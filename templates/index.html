@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction of House Price In Banglore</title>
+</head>
+<style type="text/css">
+    title{
+        text-align: right;
+    }
+    lable{
+        width: 150px;
+        display: inline-block;
+        text-align: right;
+        margin: auto;
+        justify-content: center;
+    }
+</style>
+<body style="background-color: rgba(180, 119, 69, 0.651);" >
+    <h1>  Banglore House Price Predction</h1>
+    <form method="GET" action="/predict_charges">
+
+        <lable>Size:</lable>
+        <input type="text" name ="size">
+        </select>
+        
+        <br>
+        <br>
+        <lable>Bathroom:</lable>
+        <input type="text" name ="bath">
+        </select>
+
+        <br>
+        <br>
+        <lable>Balcony:</lable>
+        <input type="text" name ="balcony">
+        </select>
+
+        <br>
+        <br>
+        <lable>Total Squre Fit:</lable>
+        <input type="text" name ="total_squre_fit">
+        </select>
+        <br>
+        <br>
+
+        <lable>Area Type:</lable>
+        <select name="area_type">
+            <option value="Super built-up  Area">Super built-up  Area</option>
+            <option value="Plot  Area">Plot  Area</option>
+            <option value="Built-up  Area">Built-up  Area</option>
+            <option value="Carpet  Area">Carpet  Area</option>
+            
+        </select>
+        <br>
+        <br>
+        <lable>Location:</lable>
+        <select name="location">
+            <option value="Electronic City Phase II">Electronic City Phase II</option>
+            <option value="Chikka Tirupathi">Chikka Tirupathi</option>
+            <option value="Uttarahalli">Uttarahalli</option>
+            <option value="Lingadheeranahalli">Lingadheeranahalli</option>
+            <option value="Kothanur">Kothanur</option>
+            <option value="Whitefield">Whitefield</option>
+            <option value="Richards Town">Richards Town</option>
+            <option value="Raja Rajeshwari Nagar">BanerRaja Rajeshwari Nagar</option>
+            <option value="Padmanabhanagar">Padmanabhanagar</option>
+            <option value="Doddathoguru">Doddathoguru</option>
+            <option value="Sarjapur  Road ">Sarjapur  Road </option>
+            <option value="Electronic City">Electronic City</option>
+            <option value="Kanakpura Road">Kanakpura Road</option>
+            <option value="Thanisandra">Thanisandra</option>
+            <option value="Bapuji Layout">Bapuji Layout</option>
+            <option value="singapura paradise">singapura paradise</option>
+            <option value="Abshot Layout">Abshot Layout</option>
+            
+            
+          </select>  
+         <br>
+         <br>
+
+    
+                       <input type="submit" value="SUBMIT">
+    
+    
+
+        </style>
+    
+        <br>
+        <p>Your House Price In Banglore will be <b> {{ prediction }} /- Rs.</b> Only (Lakh)</p>
+
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
